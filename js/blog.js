@@ -345,11 +345,11 @@ const BLOG_ARTICLES = [
       <div class="prose" style="line-height:var(--leading-relaxed);color:var(--color-body);">
         ${article.content}
       </div>
-      <footer style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-border);">
+      <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-border);">
         <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
           ${article.tags.map(t => `<span class="tag">${window.Utils.escapeHTML(t)}</span>`).join('')}
         </div>
-      </footer>
+      </div>
     `;
 
     // Related articles
@@ -416,7 +416,7 @@ const BLOG_ARTICLES = [
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
             email: emailInput.value,
-            _subject: 'New newsletter subscription from danishraza.com',
+            _subject: 'New newsletter subscription from syeddanishraza.vercel.app',
             _template: 'table',
             _captcha: 'false',
           }),

@@ -165,9 +165,6 @@
   .project-specs {
     grid-template-columns: 1fr !important;
   }
-}
-
-@media (max-width: 560px) {
   .services-grid,
   .portfolio-grid,
   .testimonials-grid,
@@ -195,6 +192,18 @@
   }
   .cta-banner .btn {
     width: 100%;
+  }
+}
+
+/* ─── Safety override: process grid → 1 column on small phones ─ */
+@media (max-width: 600px) {
+  .process-grid {
+    grid-template-columns: 1fr !important;
+  }
+  /* The wide last step must stop spanning when the grid is 1 column,
+     otherwise it forces a second implicit column */
+  .process-grid .process-step-wide {
+    grid-column: auto !important;
   }
 }
 

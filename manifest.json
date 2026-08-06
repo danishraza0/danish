@@ -2,7 +2,7 @@
   "name": "Syed Danish Raza — Web Solutions Developer",
   "short_name": "Danish Raza",
   "description": "Premium websites, custom CRM systems, and business automation for local service businesses worldwide.",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#2563EB",

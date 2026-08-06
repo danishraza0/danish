@@ -107,7 +107,7 @@
     // FormSubmit preferences: table-formatted email, captcha disabled for AJAX
     const payload = {
       ...data,
-      _subject: 'New consultation request from danishraza.com',
+      _subject: 'New consultation request from syeddanishraza.vercel.app',
       _template: 'table',
       _captcha: 'false',
     };
