@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Syed Danish Raza | Web Solutions Developer — Premium Websites for Local Businesses</title>
-  <meta name="description" content="Syed Danish Raza is a Web Solutions Developer helping local service businesses generate more leads with premium custom websites, CRM systems, and business automation. Remote, worldwide." />
-  <meta name="keywords" content="web solutions developer, local business website, custom CRM, lead generation website, business automation, Pakistan web developer, HVAC website, dental clinic website, law firm website" />
-  <meta name="author" content="Syed Danish Raza" />
+  <title>Syed Danish Raza | Web Solutions Developer</title>
+  <meta name="description" content="Syed Danish Raza is a Web Solutions Developer helping local service businesses generate leads with premium websites, custom CRM systems, and business automation." />
   <link rel="canonical" href="https://syeddanishraza.vercel.app/" />
   <meta name="theme-color" content="#2563EB" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-192.png" />
-  <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -20,14 +21,17 @@
   <meta property="og:url" content="https://syeddanishraza.vercel.app/" />
   <meta property="og:title" content="Syed Danish Raza | Web Solutions Developer" />
   <meta property="og:description" content="Helping local service businesses generate more leads with premium websites, custom CRM systems, and business automation." />
-  <meta property="og:image" content="https://syeddanishraza.vercel.app/assets/hero-sec-right-side-image.png" />
+  <meta property="og:image" content="https://syeddanishraza.vercel.app/assets/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Syed Danish Raza — Web Solutions Developer" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Syed Danish Raza | Web Solutions Developer" />
   <meta name="twitter:description" content="Premium websites & custom business systems for local service businesses worldwide." />
-  <meta name="twitter:image" content="https://syeddanishraza.vercel.app/assets/hero-sec-right-side-image.png" />
+  <meta name="twitter:image" content="https://syeddanishraza.vercel.app/assets/og-image.jpg" />
 
   <!-- Geo -->
   <meta name="geo.region" content="PK" />
@@ -40,26 +44,99 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- Styles (parallel, render-blocking kept minimal) -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 
   <!-- Manifest -->
   <link rel="manifest" href="manifest.json" />
 
-  <!-- JSON-LD Schema -->
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://syeddanishraza.vercel.app/#organization",
+    "name": "Syed Danish Raza — Web Solutions",
+    "url": "https://syeddanishraza.vercel.app",
+    "logo": "https://syeddanishraza.vercel.app/assets/logo.png",
+    "image": "https://syeddanishraza.vercel.app/assets/og-image.jpg",
+    "description": "Web solutions developer building premium websites, custom CRM systems, and business automation for local service businesses.",
+    "email": "syeddanishraza0@gmail.com",
+    "telephone": "+92-370-4127411",
+    "sameAs": [
+      "https://www.linkedin.com/in/syed-danish-raza/",
+      "https://github.com/danishraza0"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "syeddanishraza0@gmail.com",
+      "availableLanguage": ["English"]
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://syeddanishraza.vercel.app/#person",
+    "name": "Syed Danish Raza",
+    "jobTitle": "Web Solutions Developer",
+    "url": "https://syeddanishraza.vercel.app",
+    "image": "https://syeddanishraza.vercel.app/assets/og-image.jpg",
+    "email": "mailto:syeddanishraza0@gmail.com",
+    "telephone": "+92-370-4127411",
+    "sameAs": [
+      "https://www.linkedin.com/in/syed-danish-raza/",
+      "https://github.com/danishraza0"
+    ],
+    "knowsAbout": [
+      "Web Development", "Local SEO", "Conversion Optimization",
+      "CRM Systems", "Business Automation", "Lead Capture",
+      "Responsive Web Design", "Digital Transformation"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://syeddanishraza.vercel.app/#website",
+    "url": "https://syeddanishraza.vercel.app",
+    "name": "Syed Danish Raza — Web Solutions Developer",
+    "description": "Premium websites, custom CRM systems, and business automation for local service businesses.",
+    "inLanguage": "en",
+    "publisher": { "@id": "https://syeddanishraza.vercel.app/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://syeddanishraza.vercel.app/pages/blog.html?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: ProfessionalService (LocalBusiness) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": "https://syeddanishraza.vercel.app/#service",
     "name": "Syed Danish Raza — Web Solutions",
-    "founder": {
-      "@type": "Person",
-      "name": "Syed Danish Raza",
-      "jobTitle": "Web Solutions Developer"
-    },
+    "founder": { "@id": "https://syeddanishraza.vercel.app/#person" },
     "description": "Helping local service businesses generate more leads with premium custom websites, CRM systems, lead capture systems, and business automation.",
     "url": "https://syeddanishraza.vercel.app",
-    "image": "https://syeddanishraza.vercel.app/assets/hero-sec-right-side-image.png",
+    "image": "https://syeddanishraza.vercel.app/assets/og-image.jpg",
     "logo": "https://syeddanishraza.vercel.app/assets/logo.png",
     "email": "syeddanishraza0@gmail.com",
     "telephone": "+92-370-4127411",
@@ -90,8 +167,55 @@
     "knowsAbout": ["Web Development", "Local SEO", "CRM Systems", "Business Automation"]
   }
   </script>
+
+  <!-- JSON-LD: FAQPage (homepage FAQs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does a website project typically take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most projects are delivered in 3–5 weeks from the discovery call. A landing page or single-page site can be ready in as little as 10–14 days, while complex projects involving a custom CRM or automation system may take 6–8 weeks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with clients outside Pakistan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. The majority of clients are based in North America, Europe, and the Middle East. I work fully remote, communicate clearly in English, and adapt my schedule to overlap with your timezone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's included in your website maintenance plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Maintenance plans include monthly performance audits and reports, security monitoring, content updates, dependency updates, priority support with a 24-hour response SLA, and quarterly conversion reviews."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://syeddanishraza.vercel.app/" }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Scroll Progress -->
   <div id="scroll-progress" aria-hidden="true"></div>
@@ -103,7 +227,7 @@
 
         <!-- Logo -->
         <a href="index.html" aria-label="Syed Danish Raza — Home">
-          <img src="assets/logo.png" alt="Syed Danish Raza Logo" height="40" style="height:40px;width:auto;display:block;" />
+          <img src="assets/logo.png" alt="Syed Danish Raza Logo" width="676" height="144" style="height:40px;width:auto;display:block;" />
         </a>
 
         <!-- Desktop Nav -->
@@ -143,7 +267,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
 
     <!-- ─── HERO SECTION ───────────────────────────────────────── -->
     <section id="hero" aria-labelledby="hero-heading" style="padding-top:5rem;padding-bottom:5rem;background:var(--color-bg);overflow:hidden;position:relative;">
@@ -206,11 +330,16 @@
           <div class="reveal-right" style="position:relative;">
             <div style="border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-2xl);border:1px solid var(--color-border);background:var(--color-bg-section);">
               <img
-                src="assets/hero-sec-right-side-image.png"
+                src="assets/hero-sec-right-side-image.jpg"
+                srcset="assets/hero-sec-right-side-image-640.jpg 640w, assets/hero-sec-right-side-image.jpg 1024w"
+                sizes="(max-width: 640px) 640px, 1024px"
                 alt="Premium business website and CRM dashboard preview designed by Syed Danish Raza"
+                width="1024"
+                height="1024"
                 style="width:100%;height:auto;display:block;border-radius:var(--radius-2xl);"
                 loading="eager"
                 fetchpriority="high"
+                decoding="async"
               />
             </div>
 
@@ -516,12 +645,15 @@
           <article class="portfolio-card reveal stagger-1">
             <div style="overflow:hidden;">
               <img
-                src="assets/restrurant.png"
+                src="assets/restrurant.jpg"
+                srcset="assets/restrurant-640.jpg 640w, assets/restrurant.jpg 1200w"
+                sizes="(max-width: 640px) 640px, 1200px"
                 alt="Premium restaurant website with online reservation and menu system"
                 class="portfolio-card-image"
                 loading="lazy"
-                width="800"
-                height="500"
+                decoding="async"
+                width="1200"
+                height="896"
               />
             </div>
             <div class="portfolio-card-body">
@@ -538,12 +670,15 @@
           <article class="portfolio-card reveal stagger-2">
             <div style="overflow:hidden;">
               <img
-                src="assets/law-firm.png"
+                src="assets/law-firm.jpg"
+                srcset="assets/law-firm-640.jpg 640w, assets/law-firm.jpg 1200w"
+                sizes="(max-width: 640px) 640px, 1200px"
                 alt="Professional law firm website with consultation booking and authority-building content"
                 class="portfolio-card-image"
                 loading="lazy"
-                width="800"
-                height="500"
+                decoding="async"
+                width="1200"
+                height="896"
               />
             </div>
             <div class="portfolio-card-body">
@@ -560,12 +695,15 @@
           <article class="portfolio-card reveal stagger-3">
             <div style="overflow:hidden;">
               <img
-                src="assets/HVAC.png"
+                src="assets/HVAC.jpg"
+                srcset="assets/HVAC-640.jpg 640w, assets/HVAC.jpg 1200w"
+                sizes="(max-width: 640px) 640px, 1200px"
                 alt="HVAC contractor website with emergency call button, service area map, and lead capture"
                 class="portfolio-card-image"
                 loading="lazy"
-                width="800"
-                height="500"
+                decoding="async"
+                width="1200"
+                height="896"
               />
             </div>
             <div class="portfolio-card-body">
@@ -787,7 +925,7 @@
         <!-- Brand -->
         <div>
           <a href="index.html" aria-label="Syed Danish Raza — Home">
-            <img src="assets/logo-white.png" alt="Syed Danish Raza Logo" style="height:36px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:0.9;" />
+            <img src="assets/logo-white.png" alt="Syed Danish Raza Logo" width="676" height="144" style="height:36px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:0.9;" />
           </a>
           <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.5);line-height:1.7;max-width:260px;margin-bottom:1.5rem;">Helping local service businesses generate more leads with premium websites and custom business systems.</p>
           <div style="display:flex;gap:0.75rem;">
@@ -856,7 +994,7 @@
   </button>
 
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/vendor/lucide.min.js"></script>
 
   <!-- Scripts -->
   <script src="js/utils.js"></script>

@@ -1,4 +1,11 @@
+# robots.txt — Syed Danish Raza portfolio
+# https://syeddanishraza.vercel.app
+
 User-agent: *
 Allow: /
 
+# Blog-post template is superseded by canonical static article pages
+Disallow: /pages/blog-post.html
+
+# Sitemap
 Sitemap: https://syeddanishraza.vercel.app/sitemap.xml

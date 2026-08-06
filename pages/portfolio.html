@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Premium Website Concepts for Local Businesses | Syed Danish Raza</title>
+  <title>Portfolio — Premium Websites for Local Businesses</title>
   <meta name="description" content="Browse six premium website and CRM concept projects designed for local service businesses — restaurants, law firms, dental clinics, HVAC, gyms, and real estate." />
-  <meta name="keywords" content="web portfolio, local business websites, restaurant website design, law firm website, dental clinic website, HVAC website, gym website, real estate website" />
   <link rel="canonical" href="https://syeddanishraza.vercel.app/pages/portfolio.html" />
   <meta name="theme-color" content="#2563EB" />
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/icon-192.png" />
   <meta name="robots" content="index, follow" />
@@ -19,14 +19,17 @@
   <meta property="og:url" content="https://syeddanishraza.vercel.app/pages/portfolio.html" />
   <meta property="og:title" content="Portfolio | Syed Danish Raza — Web Solutions Developer" />
   <meta property="og:description" content="Six premium website concept projects built for local service businesses. Restaurants, law firms, dental clinics, HVAC, gyms, and real estate." />
-  <meta property="og:image" content="https://syeddanishraza.vercel.app/assets/hero-sec-right-side-image.png" />
+  <meta property="og:image" content="https://syeddanishraza.vercel.app/assets/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Syed Danish Raza — Web Solutions Developer" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Portfolio | Syed Danish Raza" />
   <meta name="twitter:description" content="Six premium website concept projects built for local service businesses." />
-  <meta name="twitter:image" content="https://syeddanishraza.vercel.app/assets/hero-sec-right-side-image.png" />
+  <meta name="twitter:image" content="https://syeddanishraza.vercel.app/assets/og-image.jpg" />
 
   <!-- Geo -->
   <meta name="geo.region" content="PK" />
@@ -45,12 +48,15 @@
     ]
   }
   </script>
-  <meta property="og:url" content="https://syeddanishraza.vercel.app/pages/portfolio.html" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
   <link rel="manifest" href="../manifest.json" />
 
   <script type="application/ld+json">
@@ -66,6 +72,8 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div id="scroll-progress" aria-hidden="true"></div>
 
   <!-- HEADER -->
@@ -73,7 +81,7 @@
     <div class="container-max">
       <nav role="navigation" aria-label="Main navigation" style="display:flex;align-items:center;justify-content:space-between;padding:0.875rem 0;">
         <a href="../index.html" aria-label="Syed Danish Raza — Home">
-          <img src="../assets/logo.png" alt="Syed Danish Raza Logo" style="height:40px;width:auto;display:block;" />
+          <img src="../assets/logo.png" alt="Syed Danish Raza Logo" width="676" height="144" style="height:40px;width:auto;display:block;" />
         </a>
         <ul style="display:flex;align-items:center;gap:0.25rem;list-style:none;" class="desktop-nav">
           <li><a href="../index.html" class="nav-link">Home</a></li>
@@ -104,7 +112,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
 
     <!-- PAGE HERO -->
     <section aria-labelledby="portfolio-heading" style="padding:4rem 0 3rem;background:var(--color-bg-section);border-bottom:1px solid var(--color-border);">
@@ -130,12 +138,15 @@
         <article id="project-restaurant" class="project-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding-bottom:5rem;margin-bottom:5rem;border-bottom:1px solid var(--color-border);">
           <div class="reveal-left" style="border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid var(--color-border);">
             <img
-              src="../assets/restrurant.png"
+              src="../assets/restrurant.jpg"
+              srcset="../assets/restrurant-640.jpg 640w, ../assets/restrurant.jpg 1200w"
+              sizes="(max-width: 640px) 640px, 1200px"
               alt="The Golden Fork restaurant website — premium reservation system, digital menu, and local SEO"
               style="width:100%;height:auto;display:block;"
               loading="lazy"
-              width="800"
-              height="500"
+              decoding="async"
+              width="1200"
+              height="896"
             />
           </div>
           <div class="reveal-right">
@@ -205,12 +216,15 @@
           </div>
           <div class="reveal-left" style="order:1;border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid var(--color-border);">
             <img
-              src="../assets/law-firm.png"
+              src="../assets/law-firm.jpg"
+              srcset="../assets/law-firm-640.jpg 640w, ../assets/law-firm.jpg 1200w"
+              sizes="(max-width: 640px) 640px, 1200px"
               alt="Sterling & Associates law firm website — professional authority design with consultation booking"
               style="width:100%;height:auto;display:block;"
               loading="lazy"
-              width="800"
-              height="500"
+              decoding="async"
+              width="1200"
+              height="896"
             />
           </div>
         </article>
@@ -219,12 +233,15 @@
         <article id="project-dental" class="project-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding-bottom:5rem;margin-bottom:5rem;border-bottom:1px solid var(--color-border);">
           <div class="reveal-left" style="border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid var(--color-border);">
             <img
-              src="../assets/dental-clinic.png"
+              src="../assets/dental-clinic.jpg"
+              srcset="../assets/dental-clinic-640.jpg 640w, ../assets/dental-clinic.jpg 1200w"
+              sizes="(max-width: 640px) 640px, 1200px"
               alt="BrightSmile Dental Clinic website — appointment booking system and trust-building patient portal"
               style="width:100%;height:auto;display:block;"
               loading="lazy"
-              width="800"
-              height="500"
+              decoding="async"
+              width="1200"
+              height="896"
             />
           </div>
           <div class="reveal-right">
@@ -294,12 +311,15 @@
           </div>
           <div class="reveal-left" style="order:1;border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid var(--color-border);">
             <img
-              src="../assets/HVAC.png"
+              src="../assets/HVAC.jpg"
+              srcset="../assets/HVAC-640.jpg 640w, ../assets/HVAC.jpg 1200w"
+              sizes="(max-width: 640px) 640px, 1200px"
               alt="CoolAir Pro HVAC website — emergency call CTA, service area pages, and custom CRM integration"
               style="width:100%;height:auto;display:block;"
               loading="lazy"
-              width="800"
-              height="500"
+              decoding="async"
+              width="1200"
+              height="896"
             />
           </div>
         </article>
@@ -308,12 +328,15 @@
         <article id="project-gym" class="project-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding-bottom:5rem;margin-bottom:5rem;border-bottom:1px solid var(--color-border);">
           <div class="reveal-left" style="border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid var(--color-border);">
             <img
-              src="../assets/gym.png"
+              src="../assets/gym.jpg"
+              srcset="../assets/gym-640.jpg 640w, ../assets/gym.jpg 1200w"
+              sizes="(max-width: 640px) 640px, 1200px"
               alt="EliteFit Gym website — class schedule, membership plans, and lead capture system"
               style="width:100%;height:auto;display:block;"
               loading="lazy"
-              width="800"
-              height="500"
+              decoding="async"
+              width="1200"
+              height="896"
             />
           </div>
           <div class="reveal-right">
@@ -382,12 +405,15 @@
           </div>
           <div class="reveal-left" style="order:1;border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid var(--color-border);">
             <img
-              src="../assets/real-estate.png"
+              src="../assets/real-estate.jpg"
+              srcset="../assets/real-estate-640.jpg 640w, ../assets/real-estate.jpg 1200w"
+              sizes="(max-width: 640px) 640px, 1200px"
               alt="PrimeSpace Realty website — property listings, agent profiles, and free valuation lead capture"
               style="width:100%;height:auto;display:block;"
               loading="lazy"
-              width="800"
-              height="500"
+              decoding="async"
+              width="1200"
+              height="896"
             />
           </div>
         </article>
@@ -422,7 +448,7 @@
       <div class="footer-grid" style="padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.08);">
         <div>
           <a href="../index.html" aria-label="Syed Danish Raza — Home">
-            <img src="../assets/logo-white.png" alt="Syed Danish Raza Logo" style="height:36px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:0.9;" />
+            <img src="../assets/logo-white.png" alt="Syed Danish Raza Logo" width="676" height="144" style="height:36px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:0.9;" />
           </a>
           <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.5);line-height:1.7;max-width:260px;margin-bottom:1.5rem;">Helping local service businesses generate more leads with premium websites and custom business systems.</p>
           <div style="display:flex;gap:0.75rem;">
@@ -469,7 +495,7 @@
     <i data-lucide="chevron-up" style="width:20px;height:20px;"></i>
   </button>
 
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="../js/vendor/lucide.min.js"></script>
   <script src="../js/utils.js"></script>
   <script src="../js/animations.js"></script>
   <script src="../js/scroll.js"></script>

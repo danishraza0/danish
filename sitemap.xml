@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://syeddanishraza.vercel.app/</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://syeddanishraza.vercel.app/assets/og-image.jpg</image:loc>
+      <image:title>Syed Danish Raza — Web Solutions Developer</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://syeddanishraza.vercel.app/pages/about.html</loc>
@@ -16,13 +21,13 @@
     <loc>https://syeddanishraza.vercel.app/pages/services.html</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://syeddanishraza.vercel.app/pages/portfolio.html</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://syeddanishraza.vercel.app/pages/case-studies.html</loc>
@@ -34,13 +39,55 @@
     <loc>https://syeddanishraza.vercel.app/pages/blog.html</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://syeddanishraza.vercel.app/pages/blog-post.html</loc>
+    <loc>https://syeddanishraza.vercel.app/pages/blog/local-seo-guide-2025.html</loc>
     <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://syeddanishraza.vercel.app/pages/blog/website-conversion-tips.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://syeddanishraza.vercel.app/pages/blog/crm-for-local-business.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://syeddanishraza.vercel.app/pages/blog/why-your-website-loses-clients.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://syeddanishraza.vercel.app/pages/blog/business-automation-guide.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://syeddanishraza.vercel.app/pages/blog/premium-website-roi.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://syeddanishraza.vercel.app/pages/blog/lead-capture-systems.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://syeddanishraza.vercel.app/pages/blog/choosing-right-developer.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://syeddanishraza.vercel.app/pages/contact.html</loc>
@@ -52,6 +99,18 @@
     <loc>https://syeddanishraza.vercel.app/pages/faq.html</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://syeddanishraza.vercel.app/pages/privacy-policy.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://syeddanishraza.vercel.app/pages/terms.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>

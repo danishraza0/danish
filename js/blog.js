@@ -216,7 +216,7 @@ const BLOG_ARTICLES = [
               <span style="font-size:var(--text-xs);color:var(--color-body);">${window.Utils.formatDate(a.date)}</span>
             </div>
             <h2 style="font-family:var(--font-display);font-size:var(--text-lg);font-weight:700;color:var(--color-heading);line-height:var(--leading-snug);margin-bottom:0.75rem;">
-              <a href="blog-post.html?id=${a.id}" style="text-decoration:none;color:inherit;transition:color 0.15s;" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='inherit'">
+              <a href="blog/${a.id}.html" style="text-decoration:none;color:inherit;transition:color 0.15s;" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='inherit'">
                 ${window.Utils.escapeHTML(a.title)}
               </a>
             </h2>
@@ -226,7 +226,7 @@ const BLOG_ARTICLES = [
             </div>
             <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--color-border);padding-top:1rem;margin-top:auto;">
               <span style="font-size:var(--text-xs);color:var(--color-body);">${a.readTime}</span>
-              <a href="blog-post.html?id=${a.id}" class="btn btn-ghost btn-sm" style="padding:0.375rem 0.875rem;font-size:var(--text-xs);">
+              <a href="blog/${a.id}.html" class="btn btn-ghost btn-sm" style="padding:0.375rem 0.875rem;font-size:var(--text-xs);">
                 Read Article <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
             </div>
@@ -278,6 +278,13 @@ const BLOG_ARTICLES = [
         currentSearch = e.target.value;
         filterAndRender();
       });
+    }
+
+    // Support ?q= search param (SearchAction endpoint)
+    const urlQuery = window.Utils ? window.Utils.getParam('q') : new URLSearchParams(window.location.search).get('q');
+    if (urlQuery && searchInput) {
+      currentSearch = urlQuery;
+      searchInput.value = urlQuery;
     }
 
     renderArticles(BLOG_ARTICLES);
@@ -365,7 +372,7 @@ const BLOG_ARTICLES = [
           <h2 class="text-h3" style="margin-bottom:1.5rem;">Related Articles</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
             ${relatedArticles.map(a => `
-              <a href="blog-post.html?id=${a.id}" class="card" style="text-decoration:none;display:block;padding:1.5rem;">
+              <a href="blog/${a.id}.html" class="card" style="text-decoration:none;display:block;padding:1.5rem;">
                 <span class="tag tag-primary" style="margin-bottom:0.75rem;">${window.Utils.escapeHTML(a.category)}</span>
                 <h3 style="font-family:var(--font-display);font-size:var(--text-base);font-weight:700;color:var(--color-heading);line-height:var(--leading-snug);margin-top:0.75rem;margin-bottom:0.5rem;">${window.Utils.escapeHTML(a.title)}</h3>
                 <p style="font-size:var(--text-xs);color:var(--color-body);">${a.readTime}</p>
