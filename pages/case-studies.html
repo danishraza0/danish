@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Business Case Studies — Syed Danish Raza</title>
+  <meta name="description" content="Read deep business case studies by Syed Danish Raza, exploring client challenges, research methods, visual UI designs, and expected outcomes." />
+  <meta name="keywords" content="web developer case studies, local business client results, custom systems development, UX research cases" />
+  <link rel="canonical" href="https://danishraza.com/pages/case-studies.html" />
+  <meta name="theme-color" content="#2563EB" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icon-192.png" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Syed Danish Raza — Web Solutions Developer" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://danishraza.com/pages/case-studies.html" />
+  <meta property="og:title" content="Case Studies | Syed Danish Raza — Web Solutions Developer" />
+  <meta property="og:description" content="Deep business case studies exploring client challenges, research methods, visual UI designs, and expected outcomes." />
+  <meta property="og:image" content="https://danishraza.com/assets/hero-sec-right-side-image.png" />
+  <meta property="og:image:alt" content="Syed Danish Raza — Web Solutions Developer" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Case Studies | Syed Danish Raza" />
+  <meta name="twitter:description" content="Deep business case studies exploring client challenges, research, and outcomes." />
+  <meta name="twitter:image" content="https://danishraza.com/assets/hero-sec-right-side-image.png" />
+
+  <!-- Geo -->
+  <meta name="geo.region" content="PK" />
+  <meta name="geo.placename" content="Pakistan" />
+  <meta name="geo.position" content="30.3753;69.3451" />
+  <meta name="ICBM" content="30.3753, 69.3451" />
+
+  <!-- JSON-LD Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://danishraza.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://danishraza.com/pages/case-studies.html" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="manifest" href="../manifest.json" />
+
+  <style>
+    /* Accordion transitions for case detail groups */
+    .case-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+    }
+    .case-card.active .case-detail {
+      max-height: 3000px;
+    }
+    .case-card.active .case-toggle-icon {
+      transform: rotate(180deg);
+    }
+    .case-toggle-icon {
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header id="main-header">
+    <div class="container-max">
+      <nav role="navigation" aria-label="Main navigation" style="display:flex;align-items:center;justify-content:space-between;padding:0.875rem 0;">
+        <a href="../index.html" aria-label="Syed Danish Raza — Home">
+          <img src="../assets/logo.png" alt="Syed Danish Raza Logo" style="height:40px;width:auto;display:block;" />
+        </a>
+        <ul style="display:flex;align-items:center;gap:0.25rem;list-style:none;" class="desktop-nav">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="case-studies.html" class="nav-link active">Case Studies</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:1rem;" class="desktop-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Book a Free Consultation</a>
+        </div>
+        <button id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu" style="display:none;padding:0.5rem;border-radius:var(--radius-md);background:none;border:none;cursor:pointer;color:var(--color-heading);">
+          <i data-lucide="menu" style="width:22px;height:22px;"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+        <a href="../index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+        <a href="case-studies.html" class="mobile-nav-link active">Case Studies</a>
+        <a href="blog.html" class="mobile-nav-link">Blog</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:0.5rem;text-align:center;">Book a Free Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section aria-labelledby="cases-heading" style="padding:4rem 0 3rem;background:var(--color-bg-section);border-bottom:1px solid var(--color-border);">
+      <div class="container-max">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:1.5rem;">
+          <a href="../index.html">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Case Studies</span>
+        </nav>
+        <div style="max-width:720px;">
+          <div class="eyebrow reveal"><i data-lucide="bar-chart-2" style="width:12px;height:12px;"></i> Outcomes Strategy</div>
+          <h1 id="cases-heading" class="text-h1 reveal" style="margin:1rem 0 1.25rem;">Architectural Case Studies: From Research to Results.</h1>
+          <p class="text-lead reveal">An in-depth breakdown of how three distinct concept projects were designed, coded, and measured to solve local service problems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="section-py bg-white" aria-label="Case studies">
+      <div class="container-max" style="max-width:860px;" id="case-studies-container">
+
+        <!-- Case Study 1: Restaurant Platform -->
+        <div class="case-card card reveal" style="padding:0;margin-bottom:1.5rem;">
+          <button class="case-toggle" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:var(--space-6);text-align:left;">
+            <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+              <span class="tag" style="background:rgba(245,158,11,0.1);color:#B45309;border-color:rgba(245,158,11,0.25);">Hospitality Case</span>
+              <h3 class="text-h2" style="font-size:clamp(var(--text-lg),2vw,var(--text-2xl));">The Bistro Restaurant Website Rebuild</h3>
+            </div>
+            <i data-lucide="chevron-down" class="case-toggle-icon" style="width:20px;height:20px;color:var(--color-body);flex-shrink:0;"></i>
+          </button>
+
+          <div class="case-detail" style="padding:0 var(--space-6);">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;padding:var(--space-6) 0;border-top:1px solid var(--color-border);">
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">1. Client Overview</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">The Bistro is an established local Italian restaurant facing declining walk-in volumes. They wanted to capture diners searching Google Maps and allow table reservations online.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">2. Business Problem</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Their old website was slow, not mobile-friendly, and buried the menu inside a 12MB PDF. Potential customers left before finding table reservation links.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">3. Project Goals</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Shift 40%+ of reservation calls to online forms, make menus interactive, and optimize mobile load times to under 1 second.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">4. User UX Research</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Analyzed competing local eateries. Found that 75%+ of users evaluation is done on mobile phones during evening commutes, prioritizing immediate reservation buttons.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">5. Visual Layout Strategy</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Prioritize food photography, move reservation CTAs above the fold, and highlight Google reviews near the top banner to build immediate trust.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">6. Wireframes &amp; Flows</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Designed a single-page funnel that guides visitors from header branding, through dinner menus, straight to a simplified booking form.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">7. User Interface Design</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Warm neutral background palette paired with elegant typography, ensuring the food remains the visual focus of the page.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">8. Development Process</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Custom-coded using HTML5 and pure CSS3, integrating lazy-loading scripts and lightweight SVGs for rapid mobile performance.</p>
+              </div>
+              <div style="grid-column:1/-1;background:var(--color-success-light);border:1px solid rgba(16,185,129,0.25);border-radius:var(--radius-lg);padding:1.25rem;">
+                <h4 class="text-h4" style="font-size:var(--text-sm);color:var(--color-success);margin-bottom:0.5rem;">9. Estimated Business Results</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-heading);font-weight:600;line-height:1.7;">A projected 45% increase in online reservations, a 30% reduction in phone administrative tasks, and a PageSpeed Insights performance score of 98/100.</p>
+              </div>
+              <div style="grid-column:1/-1;">
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">10. Key Lessons Learned</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Replacing bulky PDF menu assets with search engine crawlable HTML text drastically improved the restaurant's local SEO rankings.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2: Law Firm Portal -->
+        <div class="case-card card reveal" style="padding:0;margin-bottom:1.5rem;">
+          <button class="case-toggle" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:var(--space-6);text-align:left;">
+            <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+              <span class="tag" style="background:rgba(15,23,42,0.08);color:#0F172A;border-color:rgba(15,23,42,0.15);">Legal Case</span>
+              <h3 class="text-h2" style="font-size:clamp(var(--text-lg),2vw,var(--text-2xl));">Apex Legal Authority-First Redesign</h3>
+            </div>
+            <i data-lucide="chevron-down" class="case-toggle-icon" style="width:20px;height:20px;color:var(--color-body);flex-shrink:0;"></i>
+          </button>
+
+          <div class="case-detail" style="padding:0 var(--space-6);">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;padding:var(--space-6) 0;border-top:1px solid var(--color-border);">
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">1. Client Overview</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Apex Legal is a regional business litigation law firm looking to upgrade their online presence and capture higher-value corporate consultations.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">2. Business Problem</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Their template site felt generic, did not display lawyer credentials, and failed to guide potential clients to consultation forms.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">3. Project Goals</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Redesign the site around practice area authority, showcase case results, and qualify leads through a structured contact form.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">4. User UX Research</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Evaluated how corporate buyers hire lawyers online. Learned that credentials, direct lawyer bios, and practice areas are the top trust factors.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">5. Visual Layout Strategy</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Use a clean, authoritative color scheme, high-contrast typography, and dedicated subpages for key practice areas.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">6. Wireframes &amp; Flows</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Created a multi-page structure with clean navigation links, keeping the consultation request accessible from every footer.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">7. User Interface Design</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Minimal, elegant corporate layout utilizing dark slate tones and precise borders, conveying seriousness and professionalism.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">8. Development Process</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Built with accessible semantic markup and JSON-LD schema schemas to boost search engine visibility for business law queries.</p>
+              </div>
+              <div style="grid-column:1/-1;background:var(--color-success-light);border:1px solid rgba(16,185,129,0.25);border-radius:var(--radius-lg);padding:1.25rem;">
+                <h4 class="text-h4" style="font-size:var(--text-sm);color:var(--color-success);margin-bottom:0.5rem;">9. Estimated Business Results</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-heading);font-weight:600;line-height:1.7;">A projected 35% increase in high-quality business consultations, stronger local rankings, and complete PWA mobile readiness.</p>
+              </div>
+              <div style="grid-column:1/-1;">
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">10. Key Lessons Learned</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Structuring attorney profiles with clear credentials significantly increased form conversions from corporate visitors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3: HVAC Dispatch -->
+        <div class="case-card card reveal" style="padding:0;">
+          <button class="case-toggle" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:var(--space-6);text-align:left;">
+            <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+              <span class="tag" style="background:rgba(37,99,235,0.1);color:#1D4ED8;border-color:rgba(37,99,235,0.25);">Home Services Case</span>
+              <h3 class="text-h2" style="font-size:clamp(var(--text-lg),2vw,var(--text-2xl));">AirFlow HVAC Mobile Emergency System</h3>
+            </div>
+            <i data-lucide="chevron-down" class="case-toggle-icon" style="width:20px;height:20px;color:var(--color-body);flex-shrink:0;"></i>
+          </button>
+
+          <div class="case-detail" style="padding:0 var(--space-6);">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;padding:var(--space-6) 0;border-top:1px solid var(--color-border);">
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">1. Client Overview</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">AirFlow is an air conditioning repair business losing emergency calls to faster-responding local competitors.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">2. Business Problem</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Their old website buried contact information, causing urgent mobile searchers to leave and click elsewhere.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">3. Project Goals</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Put a prominent "Call Now" button at the top of the mobile screen, add service area maps, and improve load speed under spotty connections.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">4. User UX Research</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Studied search behavior for emergency home services. Verified that speed-to-contact is the single biggest factor in winning the job.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">5. Visual Layout Strategy</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Bold, high-contrast colors and clean components sized for quick mobile interaction, since most emergency searches happen on a phone.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">6. Wireframes &amp; Flows</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">A persistent sticky mobile header with a click-to-call button and a simplified emergency service request form.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">7. User Interface Design</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">High-contrast blue and orange tones, highlighting service areas, pricing, and license numbers prominently.</p>
+              </div>
+              <div>
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">8. Development Process</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">Optimized image loading and deferred offscreen styling assets to target a Lighthouse Performance score of 99/100.</p>
+              </div>
+              <div style="grid-column:1/-1;background:var(--color-success-light);border:1px solid rgba(16,185,129,0.25);border-radius:var(--radius-lg);padding:1.25rem;">
+                <h4 class="text-h4" style="font-size:var(--text-sm);color:var(--color-success);margin-bottom:0.5rem;">9. Estimated Business Results</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-heading);font-weight:600;line-height:1.7;">A projected 60%+ increase in mobile organic dispatch calls, lower form abandonment, and a Lighthouse speed score of 99/100.</p>
+              </div>
+              <div style="grid-column:1/-1;">
+                <h4 class="text-h4" style="font-size:var(--text-sm);margin-bottom:0.5rem;">10. Key Lessons Learned</h4>
+                <p style="font-size:var(--text-xs);color:var(--color-body);line-height:1.7;">In emergency services, speed-to-load and one-click contact channels are more critical than long-form business histories.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-py border-y-custom" style="background:var(--color-bg-section);" aria-label="Call to action">
+      <div class="container-max">
+        <div class="cta-banner" style="padding:4rem 2rem;text-align:center;">
+          <div class="eyebrow reveal" style="background:rgba(37,99,235,0.15);border-color:rgba(37,99,235,0.3);color:#93C5FD;margin:0 auto 1.25rem;justify-content:center;">
+            <i data-lucide="rocket" style="width:12px;height:12px;"></i> Your Case Study, Next
+          </div>
+          <h2 class="reveal" style="font-family:var(--font-display);font-size:clamp(var(--text-2xl),3vw,var(--text-4xl));font-weight:800;color:#FFFFFF;line-height:var(--leading-tight);letter-spacing:var(--tracking-tight);margin:0 auto 1.25rem;max-width:640px;">
+            See How the Same Approach Could Work for You.
+          </h2>
+          <p class="reveal" style="color:rgba(255,255,255,0.7);line-height:var(--leading-relaxed);margin:0 auto 2rem;font-size:var(--text-base);max-width:560px;">
+            Every case study starts with a free discovery call. Let's explore your business challenges and outline the architecture that solves them.
+          </p>
+          <div class="reveal" style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-white btn-lg">
+              Book a Free Consultation
+              <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+            </a>
+            <a href="portfolio.html" class="btn btn-lg" style="color:#FFFFFF;border-color:rgba(255,255,255,0.3);">
+              View Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container-max" style="padding-top:4rem;padding-bottom:2rem;">
+      <div class="footer-grid" style="padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.08);">
+        <div>
+          <a href="../index.html" aria-label="Syed Danish Raza — Home">
+            <img src="../assets/logo-white.png" alt="Syed Danish Raza Logo" style="height:36px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:0.9;" />
+          </a>
+          <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.5);line-height:1.7;max-width:260px;margin-bottom:1.5rem;">Helping local service businesses generate more leads with premium websites and custom business systems.</p>
+          <div style="display:flex;gap:0.75rem;">
+            <a href="https://www.linkedin.com/in/syed-danish-raza/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://github.com/danishraza0" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            <a href="mailto:syeddanishraza0@gmail.com" class="social-link" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+            <a href="https://wa.me/923001234567" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navigate</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.625rem;">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Showcase</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.625rem;">
+            <li><a href="case-studies.html" class="footer-link">Case Studies</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.625rem;">
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding-top:1.5rem;flex-wrap:wrap;gap:1rem;">
+        <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">&copy; <span id="footer-year"></span> Syed Danish Raza. All rights reserved.</p>
+        <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.3);">Web Solutions Developer — Remote, Worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i data-lucide="chevron-up" style="width:20px;height:20px;"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/scroll.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+    const desktopNav = document.querySelector('.desktop-nav');
+    const desktopCta = document.querySelector('.desktop-cta');
+    const hamburger = document.getElementById('hamburger-btn');
+    function handleResize() {
+      const isMobile = window.innerWidth < 1024;
+      if (desktopNav) desktopNav.style.display = isMobile ? 'none' : 'flex';
+      if (desktopCta) desktopCta.style.display = isMobile ? 'none' : 'flex';
+      if (hamburger) hamburger.style.display = isMobile ? 'block' : 'none';
+    }
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Toggle case detail cards
+    const container = document.getElementById('case-studies-container');
+    if (container) {
+      container.addEventListener('click', (e) => {
+        const button = e.target.closest('button');
+        if (!button) return;
+        const card = button.closest('.case-card');
+        if (!card) return;
+        const isActive = card.classList.contains('active');
+        container.querySelectorAll('.case-card').forEach(c => c.classList.remove('active'));
+        if (!isActive) card.classList.add('active');
+        if (window.lucide) window.lucide.createIcons();
+      });
+    }
+  </script>
+</body>
+</html>

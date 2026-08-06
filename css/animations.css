@@ -1,0 +1,163 @@
+/* ============================================================
+   ANIMATIONS & MOTION
+   ============================================================ */
+
+/* ─── Keyframes ─────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes floatDelay {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37,99,235,0.4); }
+  70%  { transform: scale(1);    box-shadow: 0 0 0 10px rgba(37,99,235,0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37,99,235,0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+@keyframes progressBar {
+  from { width: 0%; }
+  to   { width: var(--target-width, 100%); }
+}
+
+/* ─── Reveal on Scroll ─────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--duration-700) var(--ease-spring),
+              transform var(--duration-700) var(--ease-spring);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity var(--duration-700) var(--ease-spring),
+              transform var(--duration-700) var(--ease-spring);
+}
+
+.reveal-scale.in-view {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity var(--duration-700) var(--ease-spring),
+              transform var(--duration-700) var(--ease-spring);
+}
+
+.reveal-left.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity var(--duration-700) var(--ease-spring),
+              transform var(--duration-700) var(--ease-spring);
+}
+
+.reveal-right.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ─── Stagger Delays ────────────────────────────────────────── */
+.stagger-1 { transition-delay: 0ms;   }
+.stagger-2 { transition-delay: 80ms;  }
+.stagger-3 { transition-delay: 160ms; }
+.stagger-4 { transition-delay: 240ms; }
+.stagger-5 { transition-delay: 320ms; }
+.stagger-6 { transition-delay: 400ms; }
+
+/* ─── Float Animations ──────────────────────────────────────── */
+.float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-slow-delay {
+  animation: float 6s ease-in-out 2.5s infinite;
+}
+
+.float-fast {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ─── Utility ────────────────────────────────────────────────── */
+.spin {
+  animation: spin 0.8s linear infinite;
+}
+
+.pulse-ring {
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+/* ─── Reduced Motion Override ────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-scale, .reveal-left, .reveal-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .float-slow, .float-slow-delay, .float-fast {
+    animation: none !important;
+  }
+
+  .spin {
+    animation: none !important;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

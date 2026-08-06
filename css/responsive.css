@@ -1,0 +1,239 @@
+/* ============================================================
+   RESPONSIVE OVERRIDES
+   ============================================================ */
+
+/* ─── Large desktop (1400px+) ────────────────────────────────── */
+@media (min-width: 1400px) {
+  .container-max {
+    max-width: 1320px;
+  }
+}
+
+/* ─── Tablet (max 1024px) ────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .section-py {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+  }
+}
+
+/* ─── Tablet (max 768px) ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .container-max {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .section-py {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-10);
+  }
+
+  .section-header p {
+    font-size: var(--text-base);
+  }
+
+  .hero-stats {
+    gap: var(--space-6);
+  }
+
+  .back-to-top {
+    bottom: var(--space-5);
+    right: var(--space-5);
+  }
+
+  .floating-card {
+    display: none;
+  }
+
+  .btn-lg {
+    padding: 0.875rem 1.75rem;
+    font-size: var(--text-sm);
+  }
+}
+
+/* ─── Mobile (max 640px) ─────────────────────────────────────── */
+@media (max-width: 640px) {
+  .container-max {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .section-py {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  .card {
+    padding: var(--space-6);
+  }
+
+  .card-feature {
+    padding: var(--space-6);
+  }
+
+  .cta-banner::before,
+  .cta-banner::after {
+    display: none;
+  }
+}
+
+/* ─── Footer Grid (responsive columns) ───────────────────────── */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .footer-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ─── Contact page two-column grid ───────────────────────────── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-info-panel {
+  position: sticky;
+  top: 6rem;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .contact-info-panel {
+    position: static;
+  }
+}
+
+/* ─── Homepage & blog card grids (override inline styles) ───── */
+@media (max-width: 1024px) {
+  .hero-grid,
+  .split-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .trust-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid,
+  .portfolio-grid,
+  .testimonials-grid,
+  #blog-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .cta-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  .project-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-specs {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .services-grid,
+  .portfolio-grid,
+  .testimonials-grid,
+  #blog-grid,
+  .process-grid,
+  .trust-grid,
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .trust-grid {
+    gap: 1.25rem !important;
+  }
+}
+
+/* ─── CTA banner mobile padding ──────────────────────────────── */
+@media (max-width: 640px) {
+  .cta-banner {
+    padding: 3rem 1.5rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .cta-banner {
+    padding: 2.5rem 1.25rem !important;
+  }
+  .cta-banner .btn {
+    width: 100%;
+  }
+}
+
+/* ─── Print Styles ───────────────────────────────────────────── */
+@media print {
+  header,
+  footer,
+  #scroll-progress,
+  .back-to-top,
+  .btn-primary,
+  .btn-secondary,
+  .mobile-menu {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+
+  .container-max {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #666;
+  }
+
+  .card, .card-feature {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+}

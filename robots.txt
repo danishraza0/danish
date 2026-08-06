@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danishraza.com/sitemap.xml
